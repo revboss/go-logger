@@ -38,7 +38,8 @@ func LoadConfig() (Config, error) {
 
 			if len(v) == 0 {
 				if k == "HOST" {
-					v, err := os.Hostname()
+					var err error
+					v, err = os.Hostname()
 					if nil != err {
 						return c, fmt.Errorf("Unable to retrieve default hostname: %v", err)
 					}
