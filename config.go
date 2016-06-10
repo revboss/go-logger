@@ -35,9 +35,18 @@ func LoadConfig() (Config, error) {
 			if k == "ENVIRONMENT" && strings.ToLower(v) == "production" {
 				isProduction = true
 			}
+
 			if len(v) == 0 {
-				return c, fmt.Errorf("Missing required configuration value %s", k)
+				if k == "HOST" {
+					v, err = os.Hostname()
+					if nil != err {
+						return c, fmt.Errorf("Unable to retrieve default hostname: %v", err)
+					}
+				} else {
+					return c, fmt.Errorf("Missing required configuration value %s", k)
+				}
 			}
+
 			*cv.(*string) = v
 		case *int:
 			pv, _ := strconv.Atoi(v)
