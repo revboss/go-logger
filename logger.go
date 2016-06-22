@@ -1,6 +1,7 @@
 package logger
 
 import (
+	"fmt"
 	"github.com/Sirupsen/logrus"
 	"github.com/heroku/rollrus"
 	"github.com/polds/logrus-papertrail-hook"
@@ -31,6 +32,8 @@ func New(app string) *logrus.Logger {
 
 		if err == nil {
 			log.Hooks.Add(phook)
+		} else {
+			panic(fmt.Sprintf("Error: %+v", err))
 		}
 	}
 
