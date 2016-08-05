@@ -10,12 +10,22 @@ import (
 	"strings"
 )
 
+var levels = map[string]logrus.Level{
+	"debug": logrus.DebugLevel,
+	"info":  logrus.InfoLevel,
+	"warn":  logrus.WarnLevel,
+	"error": logrus.ErrorLevel,
+	"fatal": logrus.FatalLevel,
+	"panic": logrus.PanicLevel,
+}
+
 type Config struct {
 	Environment    string
 	Host           string
 	RollbarKey     string
 	PapertrailHost string
 	PapertrailPort int
+	Level          string
 }
 
 func New(app string) *logrus.Logger {
@@ -28,10 +38,21 @@ func New(app string) *logrus.Logger {
 				Default: "development",
 				Value:   &conf.Environment,
 			},
+			"LOG_LEVEL": {
+				Default: "info",
+				Value:   &conf.Level,
+			},
 		},
 	})
 	if e != nil {
 		log.Fatal(e)
+	}
+
+	conf.Level = strings.ToLower(conf.Level)
+	if level, ok := levels[conf.Level]; ok {
+		log.Level = level
+	} else {
+		log.Warnf("Invalid log level %q, using %q", conf.Level, log.Level)
 	}
 
 	le := strings.ToLower(conf.Environment)
