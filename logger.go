@@ -1,10 +1,10 @@
 package logger
 
 import (
-	"github.com/Sirupsen/logrus"
 	"github.com/heroku/rollrus"
 	"github.com/polds/logrus-papertrail-hook"
 	"github.com/revboss/go-config"
+	"github.com/sirupsen/logrus"
 	"github.com/stvp/roll"
 	"strings"
 )
