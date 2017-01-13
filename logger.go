@@ -1,9 +1,9 @@
 package logger
 
 import (
-	"github.com/heroku/rollrus"
 	"github.com/polds/logrus-papertrail-hook"
 	"github.com/revboss/go-config"
+	"github.com/revboss/rollrus"
 	"github.com/sirupsen/logrus"
 	"github.com/stvp/roll"
 	"strings"
