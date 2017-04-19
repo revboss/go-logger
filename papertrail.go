@@ -1,8 +1,8 @@
 package logger
 
 import (
-	"github.com/polds/logrus-papertrail-hook"
 	"github.com/sirupsen/logrus"
+	"gopkg.in/polds/logrus-papertrail-hook.v3"
 )
 
 type PapertrailHook struct {
