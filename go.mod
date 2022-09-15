@@ -3,11 +3,11 @@ module github.com/revboss/go-logger
 go 1.17
 
 require (
+	github.com/polds/logrus-papertrail-hook v0.0.0-20180214143432-bcfe7b72c1a4
 	github.com/revboss/go-config v0.0.0-20160720234052-f9a35313d345
 	github.com/revboss/rollrus v0.0.0-20170113155318-ea5cdf88930b
 	github.com/sirupsen/logrus v1.9.0
 	github.com/stvp/roll v0.0.0-20170522205222-3627a5cbeaea
-	gopkg.in/polds/logrus-papertrail-hook.v3 v3.0.0-20170412154733-cd6f7f5febba
 )
 
 require (

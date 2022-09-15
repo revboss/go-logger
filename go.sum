@@ -5,6 +5,8 @@ github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/polds/logrus-papertrail-hook v0.0.0-20180214143432-bcfe7b72c1a4 h1:ZZEm+Vuji24bAS1dOMYzLnsJ2YrElOjS8mmpYvg7bUQ=
+github.com/polds/logrus-papertrail-hook v0.0.0-20180214143432-bcfe7b72c1a4/go.mod h1:xH53iKsQoiPWHUWum0urfcAivyYZhPgso3azdNNdrH0=
 github.com/revboss/go-config v0.0.0-20160720234052-f9a35313d345 h1:T9OyrvFlosU1Xyzudz2aHJ+vxakfoJlSuJnhnt9eLm4=
 github.com/revboss/go-config v0.0.0-20160720234052-f9a35313d345/go.mod h1:BTw8ziTPbS+n+IQdDkak/Gxcf1nkSR7WzTEUonLKf9c=
 github.com/revboss/rollrus v0.0.0-20170113155318-ea5cdf88930b h1:pASGYq2eyGz12rfVdtWQY/bxTj111Hc38sP5FYr9EbE=
@@ -21,7 +23,5 @@ github.com/stvp/roll v0.0.0-20170522205222-3627a5cbeaea/go.mod h1:Ffmqrj3nXIMIje
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 h1:0A+M6Uqn+Eje4kHMK80dtF3JCXC4ykBgQG4Fe06QRhQ=
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
-gopkg.in/polds/logrus-papertrail-hook.v3 v3.0.0-20170412154733-cd6f7f5febba h1:pcc7LBuDTfvMscXTzxABMSEM/JN0jh4tksham6UnE3A=
-gopkg.in/polds/logrus-papertrail-hook.v3 v3.0.0-20170412154733-cd6f7f5febba/go.mod h1:ATs8ehrMq1pnH1b8oHL14numlwVF/nvD9xHEshcCkLk=
 gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c h1:dUUwHk2QECo/6vqA44rthZ8ie2QXMNeKRTHCNY2nXvo=
 gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
